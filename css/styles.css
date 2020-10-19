@@ -1,0 +1,279 @@
+    /* ================================= 
+    Base Styles
+==================================== */
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Varela Round', sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        background: linear-gradient(#2d6187, #1f3c88, #19d3da);
+        margin: 1.5em auto;
+    }
+    
+    form {
+        padding: 10px;
+        border-radius: 8px;
+    }
+    
+    .main_header h2 {
+        color: white;
+        background-color: #0c2d41;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .caption {
+        text-align: center;
+        width: 90%;
+        margin-left: 15px;
+    }
+    
+    .line {
+        margin-bottom: .5px;
+    }
+    
+    .line-break1 {
+        width: 95%;
+        height: 5px;
+        background-color: #373a40;
+    }
+    
+    .line-break2 {
+        width: 95%;
+        height: 2px;
+        background-color: #373a40;
+    }
+    
+    .faint-caption {
+        width: 80%;
+        padding-left: 100px;
+    }
+    
+    .contact {
+        text-align: left;
+        font-weight: bold;
+    }
+    
+    header {
+        height: 80px;
+        width: 100%;
+        background-color: #2D3945;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    header h1 {
+        align-self: center;
+    }
+    
+    h2 {
+        color: #0c2d41;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    legend {
+        color: #0c2d41;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    p {
+        color: rgb(182, 187, 186);
+        font-size: .95em;
+        color: black;
+    }
+    
+    hr {
+        border: 0;
+        clear: both;
+        display: block;
+        width: 96%;
+        color: #373a40;
+        height: 1px;
+    }
+    
+    .newsletter {
+        text-align: left;
+        font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select[name="state"],
+    input[type="number"],
+    select {
+        background: rgba(63, 191, 63, 1);
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        height: auto;
+        margin: 0;
+        outline: 0;
+        padding: 15px;
+        width: 100%;
+        background-color: #e8eeef;
+        color: #8a97a0;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+        margin-bottom: 30px;
+    }
+    
+    #zip {
+        display: block;
+        width: 50%;
+    }
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin: 0 4px 8px 0;
+        transition-duration: 500ms;
+    }
+    
+    select {
+        padding: 6px;
+        height: 32px;
+        border-radius: 2px;
+    }
+    
+    input:focus,
+    select:focus,
+    textarea:focus {
+        outline: 2px solid #a5691a;
+        background-color: #b570af;
+    }
+    
+     ::placeholder {
+        text-align: right;
+        font-style: normal;
+        color: #ec0101;
+    }
+    
+    .newsletter-text {
+        width: 300px;
+    }
+    
+    #topics {
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        height: auto;
+        margin: 0;
+        outline: 0;
+        padding: 15px;
+        width: 100%;
+        background-color: #e8eeef;
+        color: #8a97a0;
+        box-shadow: 0 1px 0 rgba(36, 12, 168, 0.03) inset;
+    }
+    
+    button {
+        padding: 15px;
+        color: #FFF;
+        background-color: #1a6da5;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    
+    fieldset {
+        margin-bottom: 30px;
+        border: none;
+    }
+    
+    legend {
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
+    
+    label {
+        display: inline-block;
+        margin-bottom: 9px;
+    }
+    
+    .comment {
+        padding-top: 20px;
+    }
+    
+    .main-footer1 {
+        text-align: center;
+        color: rgb(182, 187, 186);
+        margin-bottom: 10rem;
+    }
+    
+    .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /* ================================= 
+  Media Querries
+==================================== */
+    
+    @media (min-width: 768px) {
+        h1 {
+            font-size: 28px;
+        }
+        main,
+        footer {
+            width: 70%;
+        }
+        form {
+            max-width: 768px;
+            margin: 0 auto;
+        }
+        .col {
+            flex-direction: row;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="text"],
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 80%;
+        }
+        #zip {
+            margin-right: auto;
+            margin-left: 80px;
+            width: 25%;
+        }
+        .newsletter-text {
+            width: 100%;
+        }
+        select[name="state"] {
+            margin-left: 105px;
+        }
+        .faint-caption {
+            width: 100%;
+            margin-bottom: 40px;
+            margin-top: 5px;
+            text-align: left;
+            padding-left: 130px;
+        }
+        .signup {
+            margin-bottom: 5px;
+            padding-left: 60px;
+        }
+        label {
+            align-self: center;
+        }
+        .line-break2 {
+            margin-bottom: 50px;
+        }
+        .main-footer {
+            padding-left: 200px;
+        }
+    }
