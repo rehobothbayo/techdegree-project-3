@@ -152,7 +152,8 @@
     select:focus,
     textarea:focus {
         outline: 2px solid blue;
-        background-color: #b570af;
+        background-color: #a0809d;
+        transition: background-color 3s;
     }
     
      ::placeholder {
@@ -166,6 +167,7 @@
     }
     
     #topics {
+        color: #8a97a0;
         background: rgba(255, 255, 255, 0.1);
         border: none;
         border-radius: 5px;
@@ -176,7 +178,6 @@
         padding: 15px;
         width: 100%;
         background-color: #e8eeef;
-        color: #8a97a0;
         box-shadow: 0 1px 0 rgba(36, 12, 168, 0.03) inset;
     }
     
