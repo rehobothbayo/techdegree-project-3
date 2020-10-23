@@ -150,7 +150,7 @@
     
     input:focus,
     select:focus,
-    textarea:focus {
+    #topics:focus {
         outline: 2px solid blue;
         background-color: #a0809d;
         transition: background-color 3s;
@@ -167,7 +167,7 @@
     }
     
     #topics {
-        color: #8a97a0;
+        color: #000000;
         background: rgba(255, 255, 255, 0.1);
         border: none;
         border-radius: 5px;
